@@ -1,0 +1,48 @@
+html{
+	/* set border and margin */
+	border: solid 2px;
+	margin: 50px;
+}
+
+main{
+	/* main content style */
+	background-color: rgb(227,218,201);
+	text-align: center;
+	margin: 50px 100px;
+	padding: 10px;
+	border: double 5px;
+	border-radius: 10px;
+}
+
+body{
+	/* everything else set to gray */
+	background-color: gray;
+}
+
+h1{
+	/* header style */
+	text-align: center;
+	margin: 15px;
+}
+nav{
+	/* move fake navigation to center */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+nav p{
+	/* setup fake navigation */
+	border: solid 5px;
+	border-radius: 7px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+}
+
+.images{
+	/* image layout */
+	display: inline-grid;
+	gap: 50px;
+	grid-template-columns: auto auto;
+}
