@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <!-- Change character set to UTF-8 -->
+	    <meta charset="utf-8">
+		<!-- Set width and scale -->
+		<meta content="width=device-width, initial-scale=1.0">
+		<!-- Description -->
+		<meta name="description" content="T-Shirt Purchase">
+		<!-- Import style and JS files-->
+		<link rel="stylesheet" href="css/style.css">
+		<script src="scripts/BuyShirts.js" defer> </script>
+		<!-- Title -->
+		<title>T-Shirt Purchase</title>
+	</head>
+	<body>
+		<header>
+			<!-- Page Title -->
+			<h1>T Shirt Purchase</h1>
+			<!-- fake navigation -->
+			<nav>
+				<span>
+					<p>Fake Navigation</p>
+				</span>
+				<span>
+					<p>Fake Navigation</p>
+				</span>
+				<span>
+					<p>Fake Navigation</p>
+				</span>
+			</nav>
+		</header>
+		<main>
+			<!-- 2 required product images -->
+			<div class = "images">
+			<img src = 'images/shirt1.jpg' height = '500' width = '400'>
+			<img src = 'images/shirt2.jpg' height = '500' width = '400'>
+			</div> <br>
+			<!-- shirt cost announcment -->
+			<p>The first t-shirt is $11.99 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe second t-shirt is $15.99</p>
+			<!-- enter number of shirts to buy -->
+			<label for="shirt1">Buy the first shirt?</label>
+			<select name="shirt1" id="shirt1">
+  					<option value="0">0</option>
+  					<option value="1">1</option>
+					<option value="2">2</option>
+  					<option value="3">3</option>
+					<option value="4">4</option>
+  					<option value="5">5</option>
+			</select>
+			<br><br>
+			<label for="shirt2">Buy the second shirt?</label>
+			<select name="shirt2" id="shirt2">
+  					<option value="0">0</option>
+  					<option value="1">1</option>
+					<option value="2">2</option>
+  					<option value="3">3</option>
+					<option value="4">4</option>
+  					<option value="5">5</option>
+			</select>
+			<br><br>
+			<!-- Purchase form -->
+			<form id="form">
+				<!-- first and last name -->
+				<label for="firstName">First Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+ 				<input type="text" id="firstName" name="firstName"><br>
+				<label for="lastName">Last Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+ 				<input type="text" id="lastName" name="lastName"><br><br>
+				<!-- Email -->
+				<label for="email">Enter your email:   </label>
+  				<input type="email" id="email" name="email"><br><br>
+				<!-- Date -->
+				<label for="date">Enter Date:   </label>
+  				<input type="date" id="date" name="date">
+				<!-- Shipping -->
+				<p>Shipping?</p>
+				<label for="Loc">Free: ($0.00)</label>
+				<input type="radio" id="Loc" name="usa" value="0.00"><br>
+				<label for="Loc1">Fast: (3.99)&nbsp</label>
+				<input type="radio" id="Loc1" name="usa" value="3.99"><br><br>
+				<!-- Best state or worst state? -->
+				<label for="state">Choose a State:</label>
+				<select name="state" id="state">
+  					<option value="Texas">Texas</option>
+  					<option value="Ohio">Ohio</option>
+				</select>
+				<!-- Random other stuff -->
+				<p>Other stuff:</p>
+				<input type="checkbox" id="check1" name="check1" value="1.5">
+				<label for="check1"> Get a Newsletter ($1.50)&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br>
+				<input type="checkbox" id="check2" name="check2" value="2.5">
+				<label for="check2"> Get Same-day-response ($2.50)</label><br>
+				<input type="checkbox" id="check3" name="check3" value="3.5">
+				<label for="check3"> Give Donation ($3.50)&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br><br>
+				<!-- purchase and cancel buttons -->
+				<button id="submit">Purchase</button>
+				<button id="cancel">Cancel</button>
+			</form>
+			<!-- Button that hides the checkout section -->
+			<button id='start' onclick="hideCheckout()">Start Checkout</button>
+			<!-- This is where all the totals go -->
+			<div id='report'>
+				<h1 id='total'>Order Total</h1>
+				<h3 id ='name'>Buyer's Name:</h3>
+				<h3 id ='email1'>email:</h3>
+				<h3 id ='date1'>date:</h3>
+				<h3 id ='shipping1'>shipping:</h3>
+				<h3 id ='state1'>state:</h3>
+				<h3 id ='otherStuff'>otherStuff:</h3>
+			</div>
+		</main>
+	</body>
+</html>
